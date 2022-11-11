@@ -1,0 +1,11 @@
+问题1：反复注册会抛出异常，org.apache.zookeeper.KeeperException$NodeExistsException: KeeperErrorCode = NodeExists for /tyz/rpc/com.service.UserService
+原因：节点已存在，不能反复创建
+解决办法：先查询节点，如果存在，则删除。
+
+问题2：SpringBoot启动的容器如何获取？
+原因：节点已存在，不能反复创建
+解决办法：先查询节点，如果存在，则删除。
+
+问题3：创建的控制器对象中的属性userService无法初始化？
+原因：节点已存在，不能反复创建
+解决办法：先查询节点，如果存在，则删除。

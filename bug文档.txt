@@ -1,0 +1,3 @@
+问题1：反复注册会抛出异常，org.apache.zookeeper.KeeperException$NodeExistsException: KeeperErrorCode = NodeExists for /tyz/rpc/com.service.UserService
+原因：节点已存在，不能反复创建
+解决办法：先查询节点，如果存在，则删除。
